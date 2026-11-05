@@ -1,0 +1,23 @@
+# SBT / Scala build artifacts
+**/target/
+**/project/
+.bsp/
+test_run_dir/
+
+# Generated Chisel / FIRRTL Intermediate files
+*.fir
+*.anno.json
+**/*.fir
+**/*.anno.json
+
+# Generated Verilog/SystemVerilog
+*.sv
+*.v
+
+# IDE and tool caches
+.bloop/
+.metals/
+.idea/
+.vscode/
+*.log
+.DS_Store

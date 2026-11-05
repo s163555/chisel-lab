@@ -11,7 +11,13 @@ class Accu extends Module {
 
   // ***** your code starts here *****
 
-  res := 0.U // dummy code to make it compile
+  val sum = RegInit(0.U(8.W))
+  when (io.setZero) {
+    sum := 0.U
+  } .otherwise {
+    sum := sum + io.din
+  }
+  res := sum
 
   // ***** your code ends here *****
 

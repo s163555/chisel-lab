@@ -1,4 +1,5 @@
 import chisel3._
+import chisel3.stage.ChiselStage
 
 /**
   * Use Mux2 components to build a 4:1 multiplexer
@@ -50,4 +51,11 @@ class Mux4 extends Module {
 
   io.y := m2.io.y
   // ***** your code ends here *****
+}
+
+object Mux4Main extends App {
+  (new ChiselStage).emitVerilog(
+    new Mux4(),
+    Array("--target-dir", "generated")
+  )
 }

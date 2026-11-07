@@ -21,3 +21,13 @@ test_run_dir/
 .vscode/
 *.log
 .DS_Store
+
+# Vivado build artifacts and caches
+*.bit
+*.bit.bak
+.Xil/
+*.log
+*.jou
+*.backup.jou
+*.backup.log
+clockInfo.txt

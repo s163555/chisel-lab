@@ -10,10 +10,6 @@ test_run_dir/
 **/*.fir
 **/*.anno.json
 
-# Generated Verilog/SystemVerilog
-*.sv
-*.v
-
 # Verilator-generated files (obj_dir, C++ source, headers, makefiles, etc.)
 obj_dir/
 *.vlt
